@@ -1,0 +1,25 @@
+:root {
+  /* Colors */
+  --color-bg: #FFFFFF;
+  --color-text: #000000;
+  --color-red: #DA291C;
+  --color-grey-light: #E5E5E5;
+  --color-grey-medium: #888888;
+  --color-grey-dark: #333333;
+  --color-white: #FFFFFF;
+
+  /* Typography */
+  --font-display: 'Instrument Sans', sans-serif;
+  --font-body: 'Source Serif 4', Georgia, serif;
+
+  /* Layout — macro: ampliar anchura y respiración (+10% escala global) */
+  --content-max: 1496px;
+  --page-padding: 35px;
+  --gutter: 18px;
+  --header-height: 70px;
+
+  /* Borders */
+  --radius-card: 13px;
+  --radius-pill: 22px;
+  --border-thin: 1px solid #E8E8E8;
+}

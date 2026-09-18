@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Real Madrid Beer — Patricia Villapalos</title>
+  <meta name="description" content="The Real Madrid Beer — Mahou UK x Real Madrid campaign: Stars belong together.">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="stylesheet" href="../../css/variables.css">
+  <link rel="stylesheet" href="../../css/base.css">
+  <link rel="stylesheet" href="../../css/components.css">
+  <link rel="stylesheet" href="../../css/projects.css">
+</head>
+<body class="project-page project-real-madrid">
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="../../" class="header-logo">PAT</a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="../../">HOME</a>
+        <a href="../../about/">ABOUT</a>
+        <a href="../../about/#contact">CONTACT</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <a href="../../" class="back-link">&larr; BACK TO HOME</a>
+
+    <header class="project-header">
+      <h1>THE REAL MADRID<br>BEER<span class="accent-inline"></span></h1>
+    </header>
+
+    <div class="project-intro">
+      <p><strong>Madrid has two global icons: its beer and its football club.</strong></p>
+      <p>Mahou’s ambition in the UK was clear, to be recognised as <strong>the authentic beer of Madrid.</strong> And there was one advantage no other Spanish beer could claim, its partnership with Real Madrid.</p>
+      <p>Under the idea <strong>The Real Madrid Beer</strong>, we brought together two leaders, Spain’s number one beer and the most successful football club in the world. A natural alliance built around a city, a shared origin and an international ambition.</p>
+      <p>To push the connection further, we introduced <strong>Stars belong together</strong> a line that turned one of football’s most recognisable symbols into the bridge between both brands. Because when two icons share the same city, the same ambition and the same stars, they belong together.</p>
+    </div>
+
+    <section class="project-hero">
+      <div class="project-hero-media">
+        <video id="realHeroVideo" preload="none" playsinline poster="../../04-projects/05-real-madrid-beer/hero/hero-poster.jpg">
+          <source src="../../04-projects/05-real-madrid-beer/hero/hero-desktop.mp4" type="video/mp4">
+        </video>
+        <span class="pill" style="left:12px; top:12px; position:absolute;">2025</span>
+        <span class="pill" style="right:12px; top:12px; position:absolute; left:auto;">VCCP AGENCY</span>
+        <button class="hero-play" id="realHeroPlay" aria-label="Play video">
+          <svg viewBox="0 0 44 44"><circle cx="22" cy="22" r="18" fill="white" fill-opacity="0.92"/><polygon points="15,11 28,22 15,33" fill="black"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="project-gallery">
+      <!-- Row 1: Two billboards 50/50 -->
+      <div class="gallery-row col-2">
+        <div class="gallery-cell">
+          <img src="../../04-projects/05-real-madrid-beer/gallery/01-visual.avif" alt="The Real Madrid Beer — Billboard" loading="lazy">
+          <span class="pill">BILLBOARDS</span>
+        </div>
+        <div class="gallery-cell">
+          <img src="../../04-projects/05-real-madrid-beer/gallery/02-visual.avif" alt="The Real Madrid Beer — Billboard" loading="lazy">
+          <span class="pill">BILLBOARDS</span>
+        </div>
+      </div>
+      <!-- Row 2: Full width billboard -->
+      <div class="gallery-row full">
+        <div class="gallery-cell">
+          <img src="../../04-projects/05-real-madrid-beer/gallery/03-visual.avif" alt="The Real Madrid Beer — Billboard" loading="lazy">
+          <span class="pill">BILLBOARDS</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-cta">LET'S MAKE<br>SOMETHING <span class="accent">GOOD_</span></div>
+      <div class="footer-email">patvillapalos@gmail.com</div>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/patricia-villapalos-1a769a150/" target="_blank" rel="noopener noreferrer">LINKEDIN <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+        <a href="mailto:patvillapalos@gmail.com">EMAIL <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+        <a href="#" target="_blank" rel="noopener noreferrer">CV <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+  <script>
+    (function(){
+      var v=document.getElementById('realHeroVideo'), b=document.getElementById('realHeroPlay');
+      if(!v||!b) return;
+      b.addEventListener('click', function(){ v.controls=true; v.muted=false; v.play(); b.classList.add('hidden'); });
+      v.addEventListener('pause', function(){ b.classList.remove('hidden'); });
+      v.addEventListener('play', function(){ b.classList.add('hidden'); v.controls=true; });
+    })();
+  </script>
+</body>
+</html>

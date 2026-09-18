@@ -1,0 +1,263 @@
+/* ============================================
+   HOME CSS — Hero + Project Grid
+   ============================================ */
+
+/* --- Home Hero --- */
+
+.home-hero {
+  padding: 106px 35px 0;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  position: relative;
+  z-index: 3;
+}
+
+.home-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(79px, 9.4vw, 136px);
+  text-transform: uppercase;
+  line-height: 0.88;
+  letter-spacing: -0.035em;
+  margin-bottom: 15px;
+}
+
+.home-hero h1 .accent {
+  display: inline-block;
+  width: 26px;
+  height: 3px;
+  background-color: var(--color-red);
+  vertical-align: baseline;
+  margin-left: 6px;
+  position: relative;
+  top: -1px;
+}
+
+.home-hero .subtitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.10em;
+  color: #9A9A9A;
+  margin-bottom: 9px;
+}
+
+.home-hero .location {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 19px;
+  color: var(--color-red);
+  margin-bottom: 0;
+}
+
+/* --- Project Grid (3 equal columns, independent stacks) --- */
+
+.project-columns {
+  display: flex;
+  gap: 18px;
+  max-width: var(--content-max);
+  margin: 0 auto;
+  padding: 92px 35px 97px;
+  width: 100%;
+  box-sizing: border-box;
+  align-items: flex-start;
+  overflow: visible;
+}
+
+/* Home overrides global header/footer padding */
+.site-header {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.project-column {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* --- Project Card --- */
+
+.project-card {
+  display: block;
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  background-color: #f0f0f0;
+  transition: opacity 0.2s ease;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.project-card:hover {
+  opacity: 0.95;
+}
+
+.project-card .card-image {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  display: block;
+  object-fit: cover;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Card aspect ratios — alineación inferior exacta (ajuste fino: tap 0.67→0.685 para cerrar 13px de desborde col izquierda) */
+.card--tap .card-image { aspect-ratio: 0.685; }
+.card--high-five .card-image { aspect-ratio: 0.60; }
+.card--rojo .card-image { aspect-ratio: 0.66; }
+.card--mahou .card-image { aspect-ratio: 0.62; }
+.card--seeking .card-image { aspect-ratio: 1.05; }
+.card--real-madrid .card-image { aspect-ratio: 0.94; }
+.card--iconyc .card-image { aspect-ratio: 0.93; }
+
+/* Individual object-position per ref crop — ajustado tras alturas finales */
+.card--tap .card-image { object-position: center 18%; }
+.card--high-five .card-image { object-position: center 28%; }
+.card--seeking .card-image { object-position: center 22%; }
+.card--real-madrid .card-image { object-position: center 38%; }
+.card--iconyc .card-image { object-position: center 55%; }
+.card--rojo .card-image { object-position: center 18%; }
+.card--mahou .card-image { object-position: center 35%; }
+
+.project-card .card-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 14px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.08) 0%,
+    rgba(0, 0, 0, 0) 30%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.08) 62%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+}
+
+/* Card Top — Title pill + Arrow */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.card-top .pill {
+  max-width: 88%;
+  font-size: 11px;
+  padding: 8px 13px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
+  border-radius: 7px;
+  white-space: nowrap;
+}
+
+/* Card Bottom — Client + Tags */
+.card-bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.card-client {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-white);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.card-tags .tag {
+  background-color: #FFFFFF;
+  color: #111111;
+  font-family: var(--font-body);
+  font-size: 10px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  text-transform: none;
+}
+
+/* --- Arrow Icon --- */
+
+.arrow-icon {
+  width: 31px;
+  height: 31px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+}
+
+.arrow-icon svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* --- Responsive --- */
+
+@media (max-width: 1024px) {
+  .project-columns {
+    gap: 11px;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  .project-column {
+    gap: 11px;
+  }
+  .home-hero {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+  .site-header {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-columns {
+    flex-direction: column;
+    gap: 15px;
+    padding-left: 22px;
+    padding-right: 22px;
+    padding-bottom: 66px;
+  }
+  .project-column {
+    gap: 15px;
+  }
+  .home-hero {
+    padding-top: 66px;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .home-hero h1 {
+    font-size: 53px;
+  }
+  .site-header {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+  .project-card .card-image {
+    aspect-ratio: 3 / 4;
+  }
+}

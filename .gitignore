@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Backup originals
+*-original.mp4
+
+# Preview/test screenshots
+*-preview*.png
+*-reference-screenshot.png
+test-*.png
+rojo-reference-screenshot.png
+
+# Dev files
+test.js
+PROJECT_STATUS.md
+
+# Temporary
+*.tmp
+*.bak
