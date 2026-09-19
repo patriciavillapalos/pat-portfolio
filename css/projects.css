@@ -320,8 +320,7 @@
 
 
 .project-san-miguel .project-gallery {
-  max-width: 1408px;
-  padding: 31px 35px 0;
+  padding-top: 31px;
   gap: 13px;
 }
 
@@ -427,9 +426,10 @@
   letter-spacing: 0.06em;
   padding: 20px var(--page-padding) 12px;
   position: sticky;
-  top: 0;
+  top: var(--header-height);
   z-index: 10;
-  display: inline-block;
+  display: inline-flex;
+  width: fit-content;
   background-color: var(--color-bg);
   align-self: flex-start;
 }
@@ -437,8 +437,9 @@
 /* --- Project Gallery (shared across all projects) --- */
 
 .project-page .project-gallery {
-  max-width: 1408px;
-  padding: 31px 35px 0;
+  max-width: var(--content-max);
+  padding: 31px var(--page-padding) 0;
+  padding-bottom: 88px;
   gap: 13px;
 }
 
@@ -518,8 +519,8 @@
 }
 
 .project-seeking .project-hero {
-  max-width: 1408px;
-  padding: 0 35px;
+  max-width: var(--content-max);
+  padding: 0 var(--page-padding);
   margin-top: 20px;
 }
 
@@ -531,8 +532,7 @@
 }
 
 .project-seeking .project-gallery {
-  max-width: 1408px;
-  padding: 11px 35px 0;
+  padding-top: 11px;
   gap: 11px;
 }
 
@@ -616,9 +616,9 @@
   margin-bottom: 9px;
 }
 .project-rojo .project-hero {
-  max-width: 1232px;
+  max-width: var(--content-max);
   margin-top: 18px;
-  padding: 0 35px;
+  padding: 0 var(--page-padding);
 }
 .project-rojo .project-hero-media {
   aspect-ratio: 2.4;
@@ -648,8 +648,8 @@
   margin-bottom: 9px;
 }
 .project-rojo .project-hero {
-  max-width: 1232px;
-  padding: 0 35px;
+  max-width: var(--content-max);
+  padding: 0 var(--page-padding);
   margin: 18px auto 0;
 }
 .project-rojo .project-hero-media {
@@ -670,8 +670,7 @@
   top: 13px;
 }
 .project-rojo .project-gallery {
-  max-width: 1232px;
-  padding: 0 35px 0;
+  padding-top: 0;
   gap: 11px;
 }
 .project-rojo .project-section-title {
@@ -679,9 +678,9 @@
   letter-spacing: 0.08em;
   font-weight: 700;
   text-align: left;
-  max-width: 1232px;
+  max-width: var(--content-max);
   margin: 26px auto 9px;
-  padding: 0 35px;
+  padding: 0 var(--page-padding);
   color: #111;
 }
 .project-rojo .gallery-row.col-3 {
@@ -768,8 +767,8 @@
   aspect-ratio: 0.75;
 }
 .project-rojo .project-link-section {
-  max-width: 1232px;
-  padding: 9px 35px 0;
+  max-width: var(--content-max);
+  padding: 9px var(--page-padding) 0;
   text-align: left;
   margin: 0 auto;
 }
@@ -910,8 +909,8 @@
 }
 
 .project-real-madrid .project-hero {
-  max-width: 1232px;
-  padding: 0 35px;
+  max-width: var(--content-max);
+  padding: 0 var(--page-padding);
   margin: 20px auto 0;
 }
 
@@ -931,8 +930,7 @@
 }
 
 .project-real-madrid .project-gallery {
-  max-width: 1232px;
-  padding: 11px 35px 0;
+  padding-top: 11px;
   gap: 11px;
 }
 
@@ -1011,8 +1009,8 @@
 }
 
 .project-high-five .project-hero {
-  max-width: 1232px;
-  padding: 0 35px;
+  max-width: var(--content-max);
+  padding: 0 var(--page-padding);
   margin: 18px auto 0;
 }
 
@@ -1043,8 +1041,7 @@
 }
 
 .project-high-five .project-gallery {
-  max-width: 1232px;
-  padding: 9px 35px 0;
+  padding-top: 9px;
   gap: 9px;
 }
 
@@ -1090,8 +1087,8 @@
 }
 
 .project-iconyc .project-hero {
-  max-width: 1408px;
-  padding: 0 35px;
+  max-width: var(--content-max);
+  padding: 0 var(--page-padding);
   margin: 20px auto 0;
 }
 
@@ -1139,8 +1136,7 @@
 }
 
 .project-iconyc .project-gallery {
-  max-width: 1408px;
-  padding: 11px 35px 0;
+  padding-top: 11px;
   gap: 11px;
 }
 
@@ -1171,10 +1167,6 @@
 }
 
 .project-iconyc .back-link {
-  position: sticky;
-  top: 22px;
-  z-index: 20;
-  display: inline-block;
   background: transparent;
 }
 
@@ -1229,7 +1221,7 @@
   }
 
   .project-page .project-gallery {
-    padding: 18px 18px 44px;
+    padding: 18px 18px 88px;
   }
 
   .project-page .project-section-title {
@@ -1244,7 +1236,8 @@
     padding: 0 18px 44px;
   }
 
-  .project-page .back-link {
-    top: 0;
-  }
+.project-page .back-link {
+  top: var(--header-height);
+  width: fit-content;
+}
 }
