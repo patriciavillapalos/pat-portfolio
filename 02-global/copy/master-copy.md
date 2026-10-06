@@ -182,9 +182,6 @@ Agency: `VCCP AGENCY`
 - RANGE
 - PREVIOUS SKETCHES
 
-## Navigation
-← BACK TO HOME
-
 ---
 
 <!-- 04_PROJECTS/02-seeking-spanish-sunshine/copy/project-copy.md -->
@@ -213,9 +210,6 @@ Agency: `VCCP AGENCY`
 
 ## Home award badge
 4 PREMIOS BESTIN FOOD
-
-## Navigation
-← BACK TO HOME
 
 ---
 
@@ -264,9 +258,6 @@ Por la mañana, se despertó y la cruz que había llevado todos estos años al c
 ### LA DESOBEDIENCIA DE UNA RECTA
 A este chico le gustaba hacer las cosas a su manera, pero le imponían normas absurdas que no entendía. Si tenía que usar camisa, el cuello hacia abajo, si se ponía unos zapatos con cordones, el lazo tenía que estar perfecto. Su revancha no fue otra que jurar, como arquitecto, que nunca jamás haría una línea recta.
 
-## Navigation
-← BACK TO HOME
-
 ---
 
 <!-- 04_PROJECTS/04-high-five/copy/project-copy.md -->
@@ -292,9 +283,6 @@ Year: `2026`
 - PACKAGING
 - POS
 - POS
-
-## Navigation
-← BACK TO HOME
 
 ---
 
@@ -322,9 +310,6 @@ Agency: `VCCP AGENCY`
 - BILLBOARDS
 - BILLBOARDS
 - BILLBOARDS
-
-## Navigation
-← BACK TO HOME
 
 ---
 
@@ -355,9 +340,6 @@ Agency: `VCCP AGENCY`
 - THE EVENTS
 - THE EVENTS
 
-## Navigation
-← BACK TO HOME
-
 ---
 
 <!-- 04_PROJECTS/07-mahou-hunter/copy/project-copy.md -->
@@ -373,6 +355,3 @@ Title accent: red underscore
 That’s how **Mahou Hunter** was born, a social media campaign that shows why Mahou is Madrid’s beer, turning our filmmakers into **true hunters of the brand’s presence across the city.** Logos, perfectly poured beers and those moments that are simply part of everyday life in Madrid.
 
 We developed a **four-episode series** that explores Madrid from within, capturing the presence, craftsmanship and culture that have made Mahou an inseparable part of the city.
-
-## Navigation
-← BACK TO HOME

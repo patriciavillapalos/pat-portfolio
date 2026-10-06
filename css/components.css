@@ -137,19 +137,6 @@
   }
 }
 
-/* --- Back Link --- */
-
-.back-link {
-  display: inline-block;
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: var(--color-red);
-  padding: 22px var(--page-padding);
-}
-
 /* --- Pill (label over images) --- */
 
 .pill {
@@ -346,10 +333,6 @@
   }
   .footer-email {
     align-self: flex-start;
-  }
-  .back-link {
-    padding: 18px 22px;
-    font-size: 13px;
   }
   .project-intro {
     padding: 0 22px;

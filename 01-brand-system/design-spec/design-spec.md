@@ -60,12 +60,10 @@ Project grid:
 ## Project pages
 Shared structure:
 1. Header
-2. Top `← BACK TO HOME`
-3. Large centred project title + red underscore accent
-4. Centred editorial intro copy
-5. Main visual/video and gallery
-6. Bottom centred `← BACK TO HOME`
-7. Global footer
+2. Large centred project title + red underscore accent
+3. Centred editorial intro copy
+4. Main visual/video and gallery
+5. Global footer
 
 Project hero videos:
 - Autoplay
