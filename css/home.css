@@ -107,6 +107,11 @@
   object-fit: cover;
   height: auto;
   box-sizing: border-box;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .card-image {
+  transform: scale(1.03);
 }
 
 /* Card aspect ratios — alineación inferior exacta (ajuste fino: tap 0.67→0.685 para cerrar 13px de desborde col izquierda) */
